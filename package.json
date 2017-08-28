@@ -5,5 +5,26 @@
   "main": "index.js",
   "repository": "https://github.com/MiguelCrespo/react-cookbook.git",
   "author": "Miguel Crespo <miguel.crespo6@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "babylon": "^6.18.0",
+    "recast": "^0.12.6"
+  },
+  "devDependencies": {
+    "add": "^2.0.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "flow-bin": "^0.53.1",
+    "jest": "^20.0.4",
+    "nodemon": "^1.11.0",
+    "webpack": "^3.5.5",
+    "yarn": "^0.27.5"
+  },
+  "scripts": {
+    "watch": "./node_modules/.bin/webpack --config ./config/webpack.config.dev.js --watch",
+    "start::classDefinition": "node ./lib/bundle.js ./files/classDefinition.js",
+    "test": "./node_modules/.bin/jest"
+  },
+  "target": "node"
 }
