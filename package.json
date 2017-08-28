@@ -1,0 +1,9 @@
+{
+  "name": "react-cookbook",
+  "version": "0.0.1",
+  "description": "Project that aim to create a documentation generator for your react projects almost efforless and always up to date with your code through an interactive webpage where you can test the visual appearance and behavior of each of your components",
+  "main": "index.js",
+  "repository": "https://github.com/MiguelCrespo/react-cookbook.git",
+  "author": "Miguel Crespo <miguel.crespo6@gmail.com>",
+  "license": "MIT"
+}
