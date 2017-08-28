@@ -1,10 +1,11 @@
-import babylon from 'babylon';
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var babylon = require('babylon');
 
 var options = {
   sourceType: 'module',
-  strictMode: false,
-  locations: true,
-  ranges: true,
   ecmaVersion: 7,
   plugins: [
     'jsx',
@@ -26,5 +27,5 @@ export default {
     var file = babylon.parse(src, options);
     file.program.comments = file.comments;
     return file.program;
-  },
+  }
 };

@@ -12,6 +12,7 @@ const rReactClass = recast.parse(REACT_CLASS_DEFINITION_WITHOUT_SEEDS, { esprima
 const rReactClassSeeds = recast.parse(REACT_CLASS_DEFINITION_WITH_SEEDS, { esprima: babylon });
 
 describe('Utils', () => {
+  
   it('should ignore files without @tracker', () => {
     expect(shouldProcessThisFile(REACT_CLASS_DEFINITION_NO_PROCCESSED)).toBeFalsy();
   });
@@ -21,27 +22,16 @@ describe('Utils', () => {
   });
 
   it('should understand that definition is a React class', () => {
-    console.log(JSON.stringify(rReactClass));
-    expect(isReactClass())
+    expect(isReactClass(rReactClass.program.body[0])).toBeTruthy();
   });
 
-  it('should extract comment description', () => {
-    return false;
-  });
+  it('should extract comment description');
 
-  it('should extract propTypes information', () => {
-    return false;
-  });
+  it('should extract propTypes information');
 
-  it('should extract propTypes information', () => {
-    return false;
-  });
+  it('should extract propTypes information');
 
-  it('should extract propTypes information with seeds', () => {
-    return false;
-  });
+  it('should extract propTypes information with seeds');
 
-  it('should understand that definition is a React stateless function', () => {
-    return false;
-  });
+  it('should understand that definition is a React stateless function');
 });
