@@ -13,10 +13,13 @@
   "devDependencies": {
     "add": "^2.0.6",
     "babel-core": "^6.26.0",
+    "babel-jest": "^20.0.3",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
     "flow-bin": "^0.53.1",
     "jest": "^20.0.4",
+    "jest-cli": "^20.0.4",
     "nodemon": "^1.11.0",
     "webpack": "^3.5.5",
     "yarn": "^0.27.5"
@@ -26,5 +29,10 @@
     "start::classDefinition": "node ./lib/bundle.js ./files/classDefinition.js",
     "test": "./node_modules/.bin/jest"
   },
-  "target": "node"
+  "target": "node",
+  "jest": {
+    "transform": {
+      ".*": "<rootDir>/node_modules/babel-jest"
+    }
+  }
 }

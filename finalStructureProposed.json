@@ -1,0 +1,17 @@
+{
+    "location": "pathName",
+    "name": "SomeComponent",
+    "description": "SomeComponent documentation",
+    "props": {
+        "name": {
+            "type": "string",
+            "defaultValue": "Miguel",
+            "required": true,
+            "description": "Documentation for this propType",
+            "seeds": [
+                "Miguel",
+                "Pepe"
+            ]
+        }
+    }
+}

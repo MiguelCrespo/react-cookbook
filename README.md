@@ -39,3 +39,7 @@ Should generate a normal html page where you can see the component **SomeCompone
 ---
 **Project under construction...** 
 ---
+
+##About 
+
+This project is inspired by **react-docgen** and it uses **babylon** and **recast** for parsing JS code
